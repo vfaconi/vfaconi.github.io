@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
+.principal-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  line-height: 1.5em;
+}
+
+.principal-grid p{
+  margin-left: 40px;
+  width: 300px;
+}
+
+.first-column{
+  grid-column: 1-2;
+  grid-row: 1-3;
+}
+
+.second-column{
+  grid-column: 3-4;
+  grid-row: 1-3;
+}
+
+.third-column{
+  grid-column: 5-6;
+  grid-row: 1-3;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding: 20px;
+  color:white;
+  background-color: #FF101F;
+}
+
+ul{
+  list-style: none;
+}
+
+li, p, a{
+  font-family: 'Hind', sans-serif;
+}
+
+li{
+  text-align: left;
+}
+
+img{
+  width: 300px;
+  height: 500px;
+  margin-left: 40px;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  background-color: #FF101F;
+}
+
+@media only screen and (max-width: 767px) {
+  .principal-grid, h1, footer{
+      display: block;
+      width: 100%;
+  }
+}
+
+@media only screen and ( min-width: 768px) {
+  h1{
+    display: block;
+    width: 100%;
+}
+
+.first-column, .second-column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.third-column, footer{
+  position: absolute;
+}
+
+.third-column{
+  margin-top: 780px;
+}
+
+footer {
+  margin-top: 600px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  h1, footer{
+    display: block;
+    width: 100%;
+}
+
+.first-column, .second-column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.third-column{
+  position: relative;
+  margin-top: 2px;
+}
+  
+footer{
+  margin-top: 15px;
+}
+}
+
+
+
+
+
