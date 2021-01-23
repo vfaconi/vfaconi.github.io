@@ -124,6 +124,69 @@ footer{
 }
 }
 
+@media only screen and (max-width: 767px) {
+  .principal-grid, h1, footer{
+      display: block;
+      width: 100%;
+  }
+
+  .first-column, .second-column{
+    margin-left: 5px;
+  }
+}
+
+@media only screen and ( min-width: 768px) {
+  h1{
+    display: block;
+    width: 100%;
+}
+
+.first-column, .second-column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.third-column, footer{
+  position: absolute;
+}
+
+.third-column{
+  margin-top: 780px;
+}
+
+footer {
+  margin-top: 600px;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  h1, footer{
+    display: block;
+    width: 100%;
+}
+
+.first-column, .second-column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.third-column{
+  position: relative;
+  margin-top: 2px;
+}
+  
+footer{
+  margin-top: 15px;
+}
+}
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+/*headings (h1, h2, h3) will use the color Queen Blue (#33658A)
+The paragraph will use the black color
+The background will use white or Dark Sky Blue (#86BBD8) 
+The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
+
+html{
+ background-color: #86BBD8;
+}
+
+body {
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 1em;
+  }
+
+.menu-flex ul, footer{
+	display: flex;
+	background-color: #33658A;
+	align-items: center;
+    justify-content: center;
+	padding: 10px;
+}
+
+nav {
+	background-color: #33658A;
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em;
+  }
+
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+  nav a {
+	padding:1em;
+	min-width: 70px;
+	text-decoration: none;
+  }
+
+  nav a:link, nav a:visited {
+	color: white;
+  }
+
+  nav a:hover {
+	color: black;
+	background-color:  #FFD400;
+}
+
+h2, p, li, footer{
+	font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h2{
+	text-align: left;
+	font-size: 1.5rem;
+	margin: 2%;
+	color: #33658A;
+}
+
+p{
+	text-align: justify;
+	font-size: 1rem;
+	margin: 2%;
+	line-height: 1.5rem;
+}
+
+img{
+	width: 300px;
+	height: 300px;
+	margin-left: 15px;
+}
+
+footer{
+	flex-direction: column;
+    background-color: #33658A;
+	width: 100%;
+	text-align: center;
+	margin-right: 2px;
+	padding: 3px;
+	color: white;
+}
+
+footer a{
+	color: white;
+	text-align: center;
+}
+
+footer a:hover{
+	color:black;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.menu-flex ul, footer{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		
+	}
+
+	.menu-flex, footer{
+		margin-right: 25px;;
+	}
+	
+  }
+  
+  @media only screen and ( min-width: 768px) {
+	h2{
+	  display: block;
+	  width: 100%;
+  }
+  
+  .menu-flex, footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  }
+  }
+  
+ 
+
+  
+
