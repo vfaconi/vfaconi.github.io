@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+/*headings (h1, h2, h3) will use the color Queen Blue (#33658A)
+The paragraph will use the black color
+The background will use white or Dark Sky Blue (#86BBD8) 
+The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
+
+html{
+	background-color: #86BBD8;
+   }
+   
+   body {
+	   max-width: 900px;
+	   margin: 0 auto;
+	   background-color: white;
+	   padding: 1em;
+	 }
+   
+   .logo-title{
+	   display: flex;
+	   padding: 10px;
+	   background-color: #86BBD8;
+	  
+   }
+   
+   .logo-title h1{
+	   margin-left: 185px;
+	   position: absolute;
+	   color: white;
+	   font-size: 2rem;
+   }
+   
+   .logo-title h2{
+	   align-items: left;
+	   margin-top: 80px;
+	   margin-left: 20px;
+	   color: white;
+	   font-size: 1.5rem;
+   }
+   
+   .menu-flex, footer{
+	   display: flex;
+	   background-color: #33658A;
+	   align-items: center;
+	   justify-content: center;
+	   padding: 10px;
+   }
+   
+   .navigation li:first-child{
+	   display: none;
+   }
+   
+   nav {
+	   line-height: 3em;
+	   text-align: center;
+	   font-size: 1.2em;
+	 }
+   
+	 nav ul {
+	   list-style-type: none;
+	   margin: 0;
+	   padding: 0;
+	 }
+   
+	 nav a {
+	   padding:1em;
+	   min-width: 70px;
+	   text-decoration: none;
+	 }
+   
+	 nav a:link, nav a:visited {
+	   color: white;
+	 }
+   
+	 nav a:hover {
+	   color: black;
+	   background-color:  #FFD400;
+   }
+   
+   h1, h2, p, li, footer{
+	   font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+   }
+   
+   .second-nav li{
+	   flex-direction: column;
+	   background-color: gray;
+	   margin-top: 5px;   
+   }
+   
+   .preston{
+	   text-align: center;
+	   color: #33658A;
+   }
+   
+   img{
+	   width: 150px;
+	   height: 150px;
+	   margin-left: 15px;
+	   border-radius: 10px;
+   }
+   
+   footer{
+	   flex-direction: column;
+	   background-color: #33658A;
+	   text-align: center;
+	   margin-top: 15px;
+	   padding: 0;
+	   padding-bottom: 10px;
+	   color: white;
+   }
+   
+   footer a{
+	   color: white;
+	   text-align: center;
+   }
+   
+   footer a:hover{
+	   color:black;
+	   text-align: center;
+   }
+
+   @media only screen and (min-width: 1024px) {
+	    
+   .menu-flex ul{
+	display: flex;
+}
+   }
+
+@media only screen and (max-width: 767px) {
+	 footer, .logo-title{
+		display: flex;
+		width: 100%;
+	}
+
+	.navigation li:first-child{
+		display: block;
+	}
+
+	.navigation li {
+		display: none;
+	}
+
+	.navigation a{
+		display: block;
+	}
+
+	.responsive li{
+		display: block;
+	}
+
+	footer, header{
+		margin-right: 25px;
+	}
+
+	.menu-flex{
+		margin-right: -20px;
+	}
+
+	h1{
+		text-align: left;
+		margin-right: 8px;
+		margin-top: 2px;
+	}
+
+	img{
+		align-items: center;
+		margin-top: 25px;
+	}
+
+	h2{
+		padding-top: 50px;
+		margin-right: 22px;
+	}
+
+	.preston{
+		text-align: center;
+		padding: 5px;
+	}
+  }
+  
+  @media only screen and (max-width: 1022px) {
+	.logo-title{
+	  display: flex;
+	  
+	}
+
+	.navigation li:first-child{
+		display: block;
+	}
+
+	.navigation li {
+		display: none;
+	}
+
+	.navigation a{
+		display: block;
+	}
+
+	.responsive li{
+		display: block;
+	}
+	  
+   footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  }
+  }
+  
+ 
+
+  
+
