@@ -4,6 +4,13 @@ The paragraph will use the black color
 The background will use white or Dark Sky Blue (#86BBD8) 
 The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
 
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 1em;
+  }
+
    body {
 	   margin: 0 auto;
 	   padding: 1em;
@@ -33,7 +40,7 @@ The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
    
    .menu-flex, footer{
 	   display: flex;
-	   background-color: #33658A;
+	   background-color:#33658A; ;
 	   align-items: center;
 	   justify-content: center;
 	   padding: 10px;
@@ -70,21 +77,54 @@ The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
 	   background-color:  #FFD400;
    }
    
-   h1, h2, p, li, footer{
+   h1, h2, h3, p, li, footer{
 	   font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
    }
-   
-   .second-nav li{
-	   flex-direction: column;
-	   background-color: gray;
-	   margin-top: 5px;   
-   }
-   
+
    .preston{
-	   text-align: center;
-	   color: #33658A;
+	text-align: center;
+	color: #33658A;
+}
+
+   .hero-ph img{
+	   margin: 10px auto;
+	   border: 1px solid white;
+	   width: 100%;
+	   height: 250px;
    }
+
+   .hero-div{
+	   position: relative;
+	   margin: 10px auto;
+   }
+
+
+
+   .forecast{
+	width: 500px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
    
+.article
+{
+  display: flex;
+}
+
+.article-paragraph{
+  float: right;
+  margin-top: 30px;
+}
+
+.article-img{
+	width: 430px;
+	height: 300px;
+	margin-top: 30px;
+}
+   
+ 
    img{
 	   width: 150px;
 	   height: 150px;
@@ -116,6 +156,31 @@ The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
 	    
    .menu-flex ul{
 	display: flex;
+}
+
+.weather-summary{
+	position: absolute;
+	top: 18px;
+	left: 40px;
+	background-color:rgba(240, 240, 240, 0.8);
+	width: 20%;
+	padding-left: 30px;
+}
+
+.contact{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.map img{
+	width: 500px;
+	height: 300px;
+	margin-left: 100px;
+}
+
+.social{
+   width: 60px;
+   height: 60px;
 }
    }
 
@@ -169,6 +234,19 @@ The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
 		text-align: center;
 		padding: 5px;
 	}
+
+	.hero-div{
+		display: block;
+	}
+
+	.weather-summary{
+		display:block;
+	}
+
+	.information{
+		margin-top: -50px;
+	}
+
   }
   
   @media only screen and (max-width: 1022px) {
@@ -198,7 +276,32 @@ The menu will use the colors Cyber Yellow (#FFD400) and Queen Blue (#33658A)*/
 	flex-direction: column;
 	width: 100%;
   }
+
+  .hero-div, .article, .article-img, .map img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.weather-summary{
+	display:block;
+	background-color:#86BBD8;
+}
+
+.forecast{
+	width: 100%;
+	height: 100%;
+}
+
+.social{
+	width: 60px;
+	height: 60px;
+}
+
   }
+
+
   
  
 
