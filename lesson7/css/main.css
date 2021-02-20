@@ -77,12 +77,37 @@ main {
 	   background-color:  #FFD400;
    }
    
-   h1, h2, h3, p, li, footer, span{
+   h1, h2, h3, p, li, footer, span, figcaption{
 	   font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+   }
+
+   figcaption{
+	   text-align: center;
+	   margin-left: 15px;
+	   border-radius: 10px;
+	   box-shadow: 0 0 1em gray;
+	   width: 350px;
+
    }
 
    .container_grid{
 	   display:grid;
+	  
+   }
+
+   .title{
+	   margin-left: 25px;
+   }
+
+   .container_grid img{
+	width: 350px;
+	height: 300px;
+
+   }
+
+   .principal-box{
+	  margin-left: -5px;
+	  padding-left: 2px;
    }
 
 
@@ -102,7 +127,6 @@ main {
 	   position: relative;
 	   margin: 10px auto;
    }
-
 
 
    .forecast{
@@ -157,7 +181,7 @@ main {
 	   text-align: center;
    }
 
-   @media only screen and (min-width: 1022px) {
+   @media only screen and (min-width: 1021px) {
 	    
    .menu-flex ul{
 	display: flex;
@@ -166,6 +190,16 @@ main {
 .container_grid{
 	grid-template-columns: 1fr 1fr 1fr;
 }
+
+.container_grid img{
+	box-shadow: 0 0 1em gray;
+}
+
+.sunny:hover, .darkClouds:hover, .landscape:hover, .sunset:hover, .rainbow:hover, .lightOne:hover, .sun:hover, .lightTwo:hover, .wind:hover{
+	box-shadow: 0 0 50px #333;
+}
+
+
 
 .weather-summary{
 	position: absolute;
@@ -238,6 +272,11 @@ main {
 		margin-top: 25px;
 	}
 
+	.container_grid img, figcaption{
+		align-items: center;
+		width: 100%;
+	}
+
 	h2{
 		padding-top: 50px;
 		margin-right: 22px;
@@ -262,7 +301,7 @@ main {
 
   }
   
-  @media only screen and (min-width: 768px) and (max-width: 1022px) {
+  @media only screen and (min-width: 768px) and (max-width: 1020px) {
 	.logo-title{
 	  display: flex;
 	  
@@ -286,6 +325,11 @@ main {
   
 	.container_grid{
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.container_grid img, figcaption{
+		align-items: center;
+		width: 100%;
 	}
 	
    footer{
