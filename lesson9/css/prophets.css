@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+.cards, h1{
+    display: grid;
+    padding: 5px;
+}
+
+h1, p{
+    font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 15px;
+       
+}
+
+.cards section{
+    background-color: #ACB0BD;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.cards{
+    background-color: #0B3948;
+}
+
+img{
+    width: 70%;
+    box-shadow: 0 0 1em gray;
+    margin-left: 30px;
+}
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (min-width: 1021px) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cards{
+       grid-template-columns: 1fr;
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    .cards{
+       grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+
+
+
+
+
+  
+
