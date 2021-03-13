@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Preston Page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Vanessa Faconi Week 04 Assigment: Preston Town Page">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.jpg" alt="website logo">
+            <h1>Sunny Rainny Day Site</h1>
+            <h2>Weather Information Every Day</h2>
+        </div>
+        <div class="menu-flex">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-6.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="preston">Preston Idaho</h1>
+        <div class="hero-div">
+            <div class="hero-ph">
+                <picture>
+                    <img class="logo" src="images/hero.jpeg">
+                    <source class="logo" src="images/hero_small.jpeg" media="(min-width: 500px) and (max-width: 799px)">
+                    <source class="logo" src="images/hero_medium.jpeg" media="(min-width: 800px)">
+                </picture>
+            </div>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="descrip"></span></p>
+                <p>High: <span id="high"></span>&deg; F</p>
+                <p>Wind Chill: <span id="output"></span>&deg; F</p>
+                <p>Humidity: <span id="humidity"></span> </p>
+                <p>Wind Speed: <span id="wind"></span> </p>
+            </section>
+        </div>
+        <div class="container">
+            <h2 class="preston">5 Day Forecast</h2>
+           
+           <!-- <p><span id="dayofweek1"></span> : <span id="forecast1"></span>&deg; F</p>
+            <p><span id="dayOfWeek2"></span> : <span id="forecast2"></span>&deg; F</p>
+            <p><span id="dayOfWeek3"></span> : <span id="forecast3"></span>&deg; F</p>
+            <p><span id="dayOfWeek4"></span> : <span id="forecast4"></span>&deg; F</p>
+            <p><span id="dayOfWeek5"></span> : <span id="forecast5"></span>&deg; F</p> -->
+
+            <div class="article">
+                <p class="article-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                    also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader
+                    will be
+                    distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                    Ipsum is
+                    that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                    content here',
+                    making it look like readable English. Many desktop publishing packages and web page editors now use
+                    Lorem
+                    Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                    in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected
+                    humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                    roots in a
+                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                    Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur,
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                    discovered the
+                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+                    Malorum"
+                    (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
+                    of ethics,
+                    very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                    comes from
+                    a line in section 1.10.32.</p>
+                <picture>
+                    <img class="article-img" src="images/article.jpg">
+                    <source class="article-img" src="images/article_small.jpg"
+                        media="(min-width: 500px) and (max-width: 799px)">
+                    <source class="article-img" src="images/article_medium.jpg" media="(min-width: 800px)">
+                </picture>
+
+            </div>
+        </div>
+    </main>
+    <section class="contact">
+        <div class="map">
+            <picture>
+                <source srcset="map_small.jpg" media="(max-width: 767px)">
+                <source srcset="map_medium.jpg" media="(max-width: 1022px)">
+                <img src="images/map.jpg" media="(min-width: 1023px)">
+            </picture>
+
+        </div>
+        <div class="information">
+            <h2>Contact Information</h2>
+            <p>254 658 365</p>
+            <p>mail@preston.com</p>
+            <p>65 Map Street</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social"
+                    src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ffacebook.png?1602111141710"
+                    alt="facebook logo" /></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social"
+                    src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Finstagram.png?1602111151088"
+                    alt="instagram logo" /></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social"
+                    src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ftwitter.png?1602111159044"
+                    alt="twitter logo" /></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2021 | Vanessa Faconi | Brazil | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+        <p>Last Updated:</p><span id="currentDate"></span>
+    </footer>
+    <script src="js/forecast.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Noto Sans JP']
+            }
+        });
+    </script>
+</body>
+
+</html>
