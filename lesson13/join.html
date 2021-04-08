@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/index.css" />
+    <title>Chamber Of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="img/logo3.png" alt="website logo">
+            <h1>SOROCABA</h1>
+            <h2>The Power of Local Commerce</h2>
+        </div>
+        <div class="menu-flex">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main class="home">
+    <main class="storm-form">
+        <form>
+            <ul>
+                <label for="fullName">*First Name</label>
+                <input type="fullName" name="fullName" placeholder="Nome" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" required>
+
+                <label for="lastName">*Last Name</label>
+                <input type="lastName" name="lastName" placeholder="Nome" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" required>
+
+                <label for="title">Title</label>
+                <input type="title" name="title" placeholder="Nome" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$">
+                
+                <label for="emailUser">*email</label>
+                <input type="email" id="emailUser" class="input-text" name="email" placeholder="mail@mail.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                
+                <label for="phone">*Cell Phone Number</label>
+                <input type="tel" id="phone" maxlength="11" name="phone"
+                    pattern="[0-9]+$" required />
+
+                    <label for="businessName">*Business Name</label>
+                    <input type="businessName" name="businessName" placeholder="Nome" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" required>
+                
+                <label for="zipCode">Zip Code</label>
+                <input type="zipCode" id="zipCode" maxlength="8" name="numbers" pattern="[0-9]+$" />
+
+                <label for="address">Address</label>
+                    <input type="address" name="address" placeholder="Nome" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" required>
+                
+                <label for="website">Website</label>
+                <input type="url" name="website" placeholder="Nome" pattern="https?://.+" title="Include http://" required>
+                
+                <div class="descr">
+                    <label for="description" id="description">Business Description</label>
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                    </div>            
+                               
+                <label for="level" id="select" >Select a Membership Level</label>
+                <input id="level" list="level" />
+                <datalist id="level">
+                    <option value="Non-profit ($100)">
+                    <option value="Bronze ($200)">
+                    <option value="Silver ($400)">
+                    <option value="Gold ($1000)">
+                </datalist>
+                
+                <button type="submit" id="submitLevel"><a target="_blank" href='#'>Submit</a></button>
+            </ul>
+        </form>
+ 
+    <section class="contact">
+        <div class="map">
+            <img src="img/map.jpg" alt="map">
+        </div>
+        <div class="information">
+          <h2>Contact Information</h2>
+          <p>15 5555 6698</p>
+          <p>mail@commerce.com</p>
+          <p>25 Barcelona Street</p>
+          <a href="https://www.facebook.com" target="_blank"><img class="social"
+              src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ffacebook.png?1602111141710"
+              alt="facebook logo" /></a>
+          <a href="https://www.instagram.com" target="_blank"><img class="social"
+              src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Finstagram.png?1602111151088"
+              alt="instagram logo" /></a>
+          <a href="https://www.twitter.com" target="_blank"><img class="social"
+              src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ftwitter.png?1602111159044"
+              alt="twitter logo" /></a>
+        </div>
+      </section>
+        </main>
+        <footer>
+            <p>&copy; 2021 | Vanessa Faconi | Brazil | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+            <p>Last Updated:</p><span id="currentDate"></span>
+        </footer>
+    <script src="js/forecast.js"></script>
+    <script src="js/api_weather.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -40,7 +40,6 @@ body {
 .menu-flex, footer {
 	display: flex;
 	background-color: #33658A;
-	;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;

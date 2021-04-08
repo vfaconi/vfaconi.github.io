@@ -1,0 +1,726 @@
+/* Heading Font: Noto Sans JP / Paragraph Font: Source Sans Pro */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+.logo-title {
+	display: flex;
+	padding: 10px;
+	background-color:#08415C;
+}
+
+.logo-title h1 {
+	margin-left: 185px;
+	position: absolute;
+	color: white;
+	font-size: 2rem;
+}
+
+.logo-title h2 {
+	align-items: left;
+	margin-top: 80px;
+	margin-left: 20px;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.logo-title img{
+    background-color: white;
+}
+
+.menu-flex, footer {
+	display: flex;
+	background-color:#FF3C38;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+.navigation li:first-child {
+	display: none;
+}
+
+nav {
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	padding: 1em;
+	min-width: 70px;
+	text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+	color: white;
+}
+
+nav a:hover {
+	color: black;
+	background-color: #DCDCDC;
+    padding: 25px;
+}
+
+h1, h2, h3, p, li, footer, span, button, label, figcaption {
+	font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.text2{
+    background-color: #08415C;
+    color: white;
+    margin: auto;
+}
+
+.sorocaba {
+	text-align: center;
+	color: #08415C;
+}
+
+.sorocaba2{
+    text-align: center;
+	color: #08415C;
+    margin-bottom: 15px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	margin-left: 15px;
+	border-radius: 10px;
+}
+
+.photos{
+	display: flex;
+    margin: 0 auto;
+	padding: 10px;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.join{
+    background-color: whitesmoke;
+}
+
+.events{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 2px;
+    padding-left: 15px;
+}
+
+.events h2{
+    color: #08415C;
+}
+
+
+footer {
+	flex-direction: column;
+	background-color: #08415C;
+	text-align: center;
+    margin-top: 5px;
+	color: white;
+}
+
+footer p{
+    margin-top: 5px;
+}
+
+footer a {
+	color: white;
+	text-align: center;
+}
+
+footer a:hover {
+	color: black;
+	text-align: center;
+}
+
+/*city page */
+.container_grid{
+    display:grid;
+   
+}
+
+.container_grid img{
+ width: 350px;
+ height: 300px;
+}
+
+
+
+@media only screen and (min-width: 1021px) {
+    main {
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+    body {
+        margin: 0 auto;
+        padding: 1em;  
+    }
+
+	.menu-flex ul {
+		display: flex;
+	}
+
+    .photos img{
+        width: 350px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .night{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .hero{
+        width: 900px;
+        height: 300px;
+        margin-left: 140px;
+    }
+
+    .weather-summary {
+		position: absolute;
+		top: 1030px;
+		left: 750px;
+		background-color: rgba(240, 240, 240, 0.8);
+		width: 20%;
+		padding-left: 20px;
+        border-radius: 10px;
+	}
+
+    .text, p {
+        display: flex;
+        text-align: justify;
+        margin-top: 30px;
+        line-height: 25px;
+        padding-right: 5px;
+        margin-right: 10px;
+    }
+    
+    .text h2{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    button{
+        background-color: #00487C; 
+        border-radius: 10px;
+        color: white;
+        padding: 15px 32px;
+        margin-left: 570px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        background-color: whitesmoke;
+	}
+
+    .logo img{
+        width: 300px;
+        height: 250px;
+        margin-left: 80px;
+    }
+
+	.map img {
+		width: 400px;
+		height: 300px;
+		margin-left: 100px;
+        margin-top: 10px;
+	}
+	.social {
+		width: 60px;
+		height: 60px;
+	}
+
+    /*city page*/
+    .container_grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .container_grid img{
+        box-shadow: 0 0 1em gray;
+        margin-left: -30px;
+    }
+
+    figcaption{
+        text-align: center;
+        margin-left: -30px;
+        border-radius: 10px;
+        box-shadow: 0 0 1em gray;
+        width: 350px;
+ 
+    }
+
+    table {
+        font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        background-color: #00487C;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    
+    thead {
+        background-color: #FF3C38;
+        color: white;
+        border-radius: 10px;
+    }
+
+    /* join page - form */
+
+/*form - start*/
+form {
+	/* Center the form on the page */
+	margin: 0 auto;
+	width: 500px;
+	/* Form outline */
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	background-color: #08415C;
+  }
+
+input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	margin-left: -20px;
+}
+
+label{
+	margin-left: -5px;
+    color: white;
+}
+
+  textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	margin-left: -19px;
+  }
+
+ a{
+	 text-decoration: none;
+ }
+
+#description{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#select{
+    margin-top: 15px;
+}
+
+ button#submitLevel{
+    background-color: #FF3C38; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+/*end form*/
+
+  
+
+}
+
+@media only screen and (max-width: 767px) {
+    footer, .logo-title{
+       display: flex;
+     
+   }
+
+   .logo-title h1, h2{
+     font-size: 25px;
+     text-align: center;
+   }
+
+   .navigation li:first-child{
+       display: block;
+   }
+
+   .navigation li {
+       display: none;
+   }
+
+   .navigation a{
+       display: block;
+   }
+
+   .responsive li{
+       display: block;
+   }
+
+   .photos, .hero{
+       display: block;
+   }
+
+   .photos img{
+       width: 100%;
+   }
+
+   .hero{
+      display: none;
+   }
+
+   table{
+       display: none;
+   }
+
+   #forecastTitle{
+       display: none;
+   }
+
+   .container_grid{
+       grid-template-columns: 1fr;
+   }
+
+   .container_grid img{
+       align-items: center;
+       width: 100%;
+   }
+
+   figcaption{
+       text-align: center;
+   }
+
+     .weather-summary p{
+       display:grid;
+       grid-column: 1fr 1fr;
+       text-align: center;
+   }
+
+   .join{
+       margin: 5px;
+   }
+
+   .sorocaba-paragraph{
+       display: block;
+       margin: 10px;
+       text-align: justify;
+   }
+
+   button{
+    display: block;
+    background-color: #00487C; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+  
+.weather-summary {
+    display: block;
+}
+
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.map {
+    display: none;
+}
+
+.information {
+    display: block;
+    text-align: center;
+}
+
+.social {
+    display: inline;
+    width: 20%;
+    height: 20%;
+    align-items: center;
+}
+
+/* join page - form */
+
+/*form - start*/
+	/*form - start*/
+    form {
+        /* Center the form on the page */
+        align-items: center;
+        width: 90%;
+        margin-top: 15px;
+        
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        background-color: #08415C;
+      }
+
+input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	margin-left: -20px;
+}
+
+label{
+	margin-left: -5px;
+    color: white;
+}
+
+  textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	margin-left: -19px;
+  }
+
+ a{
+	 text-decoration: none;
+ }
+
+#description{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#select{
+    margin-top: 15px;
+}
+
+ button#submitLevel{
+    background-color: #FF3C38; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+/*end form*/
+
+
+  }
+ 
+ @media only screen and (min-width: 768px) and (max-width: 1020px) {
+   .logo-title{
+     display: flex;
+     
+   }
+
+   .navigation li:first-child{
+       display: block;
+   }
+
+   .navigation li {
+       display: none;
+   }
+
+   .navigation a{
+       display: block;
+   }
+
+   .responsive li{
+       display: block;
+   }
+ 
+   .container_grid{
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .container_grid img{
+       align-items: center;
+       width: 100%;
+   }
+   
+  footer{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .map img{
+   display: none;
+ }
+
+.weather-summary{
+   display:block;
+   background-color: whitesmoke;
+   text-align: center;
+}
+
+.hero{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+
+.forecast{
+   width: 100%;
+   height: 100%;
+}
+
+.sorocaba-paragraph{
+    display: block;
+    margin: 10px;
+    text-align: justify;
+}
+
+button{
+    display: block;
+    background-color: #00487C; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.logo img{
+    display: inline;
+    margin-left: 70px;
+}
+
+.photos, .hero{
+    display: block;
+}
+
+.photos img{
+    display: inline;
+    width: 30%;
+    
+}
+
+table {
+    font-family: 'Noto Sans JP', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: #00487C;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+thead {
+    background-color: #FF3C38;
+    color: white;
+    border-radius: 10px;
+}
+
+.information {
+    display: block;
+    text-align: center;
+}
+
+.social {
+    display: inline;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+/* join page - form */
+
+/*form - start*/
+	/*form - start*/
+    form {
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 500px;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+            background-color: #08415C;
+          }
+
+input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	margin-left: -20px;
+}
+
+label{
+	margin-left: -5px;
+    color: white;
+}
+
+  textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	margin-left: -19px;
+  }
+
+ a{
+	 text-decoration: none;
+ }
+
+#description{
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+#select{
+    margin-top: 15px;
+}
+
+ button#submitLevel{
+    background-color: #FF3C38; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+/*end form*/
+
+ }
+
+
+ 
+
+
+ 
+

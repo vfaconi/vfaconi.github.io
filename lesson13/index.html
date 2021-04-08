@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Chamber Of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="img/logo3.png" alt="website logo">
+            <h1>SOROCABA</h1>
+            <h2>The Power of Local Commerce</h2>
+        </div>
+        <div class="menu-flex">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="home">
+
+        <h1 class="sorocaba">Sorocaba</h1>
+        <div class="photos">
+            <img src="img/kasato.jpg">
+            <img class="night" src="img/sorocaba noite.png">
+            <img src="img/botanico.png">
+        </div>
+
+        
+        <div class="weather">
+            <h2 class="sorocaba" id="forecastTitle">3 Day Forecast</h2>
+            <div>
+                <table class="forecast">
+                    <thead>
+                        <tr>
+                            <th><span id="dayofWeek1"></span>: <span id="forecast1"></span>&deg; F</th>
+                            <th><span id="dayofWeek2"></span>: <span id="forecast2"></span>&deg; F</th>
+                            <th><span id="dayofWeek3"></span>: <span id="forecast3"></span>&deg; F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td><span id="image1"></span>&nbsp;<img src="" alt="" id="icon1"></td>
+                        <td><span id="image2"></span>&nbsp;<img src="" alt="" id="icon2"></td>
+                        <td><span id="image3"></span>&nbsp;<img src="" alt="" id="icon3"></td>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="sorocaba">Weather Summary</h2>
+            <img class="hero" src="img/hero.jpg">
+            <section class="weather-summary">
+                <p>Currently: <span id="temp"></span> &deg; F</p>
+                <p>Humidity: <span id="humidity"></span> </p>
+                <p>Description: <span id="descr"></span> </p>
+            </section>
+        </div>
+
+        <div class="join">
+            <div class="text">
+                <h2 class="sorocaba">Purpose</h2>
+                <p class="purpose">Our purpose is to help the local commerce increase in a sustainable way and contribute to the city
+                    increase too. Through training, news, and events we want to capacitate our entrepreneurs and provide
+                    support during these tough times.</p>
+             
+                <h2 class="sorocaba">Goal</h2>
+                <p class="goal">Our goal is for every local commerce to find help and support to adapt their business to the current
+                    times, through consultancy and guidance to change, when is possible, from presential in a
+                    technological business. This way we want our entrepreneurs and city continuing increase despite the
+                    crises.</p>
+               
+            </div>
+
+            <button type="submit"><a target="_blank" href='join.html'>Join Us</a> </button>
+        </div>
+
+        <div class="events">
+            <h2>Events</h2>
+            <p>04/10/2021 - Music Concert - Virtual Meeting</p>
+            <p>04/17/2021 - How to Increase My Business - Virtual Training</p>
+            <p>04/24/2021 - Donation Food - Chamber Commerce</p>
+        </div>
+
+        <div class="logo">
+            <h2 class="sorocaba">Local Companies</h2>
+            <img src="img/logo_vet.png">
+            <img src="img/restaurant .png">
+            <img class="small" src="img/logo_beauty.png">
+        </div>
+
+        <section class="contact">
+            <div class="map">
+                <img src="img/map.jpg" alt="map">
+            </div>
+            <div class="information">
+                <h2>Contact Information</h2>
+                <p>15 5555 6698</p>
+                <p>mail@commerce.com</p>
+                <p>25 Barcelona Street</p>
+                <a href="https://www.facebook.com" target="_blank"><img class="social"
+                        src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ffacebook.png?1602111141710"
+                        alt="facebook logo" /></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social"
+                        src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Finstagram.png?1602111151088"
+                        alt="instagram logo" /></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="social"
+                        src="https://cdn.glitch.com/c8ebfa81-6826-4526-bb8f-564776508964%2Ftwitter.png?1602111159044"
+                        alt="twitter logo" /></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021 | Vanessa Faconi | Brazil | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+        <p>Last Updated:</p><span id="currentDate"></span>
+    </footer>
+    <script src="js/forecast.js"></script>
+    <script src="js/api_weather.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
